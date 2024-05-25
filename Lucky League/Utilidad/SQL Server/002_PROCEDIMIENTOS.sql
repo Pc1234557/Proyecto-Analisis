@@ -1,5 +1,5 @@
 GO
-USE DB_CARRITO
+USE LuckyLeague
 
 GO
 create proc sp_obtenerCategoria
@@ -271,7 +271,7 @@ begin
 
 		set @idcompra = scope_identity()
 
-		set @QueryDetalleCompra = replace(@QueryDetalleCompra,'¡idcompra!',@idcompra)
+		set @QueryDetalleCompra = replace(@QueryDetalleCompra,' idcompra!',@idcompra)
 
 		EXECUTE sp_executesql @QueryDetalleCompra
 

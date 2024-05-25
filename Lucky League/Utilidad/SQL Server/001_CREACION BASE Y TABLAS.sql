@@ -1,9 +1,7 @@
-
-
-create database DB_CARRITO
+create database LuckyLeague
 
 GO
-USE DB_CARRITO
+USE LuckyLeague
 GO
 
 CREATE TABLE CATEGORIA(
